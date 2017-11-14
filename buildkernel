@@ -1738,9 +1738,6 @@ kernel_build_pass_1() {
         show "Installing modules..."
         ${MAKE} modules_install
     fi
-
-    show "Installing firmware..."
-    ${MAKE} firmware_install
 }
 rebuild_external_modules_if_necessary() {
     if ((ARG_REBUILD_EXTERNAL_MODULES==1)); then
